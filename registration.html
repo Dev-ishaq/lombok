@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+            width: 100%;
+            height: 100%;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #d5ceced0;         
+            width: 27vw;
+            margin-left: 28.5rem;
+            margin-top: 4.3px;
+            padding: 10px;
+            border-radius: 7px;
+            font-family: monospace;     
+        }
+        .header{
+            /* background-color: orange; */
+            width: 35vw;
+            text-align: center;
+            font-family: monospace;
+            font-size: 1rem;
+        }
+        input{
+            width: 24vw;
+            height: 4vh;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            font-family: monospace;
+            outline: none;
+        }
+        #select{
+            width: 22.5vw;
+            height: 5vh;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: monospace;
+        }
+        button{
+            width: 27vw;
+            height: 5vh;
+            border: none;
+            background-color: orange;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color:rgb(255, 194, 82);
+            color: rgb(139, 139, 139);
+        }
+        button:focus{
+            background-color:transparent;
+            color: rgb(139, 139, 139);
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <div class="header">
+            <h2>
+                Registration 
+            </h2>
+        </div>
+        <div class="container">
+            <input type="firstName" name="firstName" placeholder="Enter first name" required><br><br>
+            <input type="secondName" name="secondName" placeholder="Enter second name" required><br><br>
+            <input type="lastName" name="" placeholder="Enter last name" required><br><br>
+            <input type="number" name="number" placeholder="Enter number" required><br><br>
+            <input type="mailto" name="email" placeholder="Enter email" required><br><br>
+            <input type="date" name="date" placeholder="" required><br><br>
+            <input type="password" name="password" placeholder="New password" required><br><br>
+            <input type="password" name="password" placeholder="Confirm password" required><br><br>
+            <select name="select" id="select" required><br><br>
+                <option value="Choose">Choose State of origin</option><br><br><br>
+                <option value="Abuja">Abuja</option>
+                <option value="Bauchi">Bauchi </option>
+                <option value="Barno">Barno </option>
+                <option value="Gombe">Gombe </option>
+                <option value="Ibadan">Ibadan</option>
+                <option value="Jigawa">Jigawa </option>
+                <option value="Jos">Jos</option>
+                <option value="Kaduna">Kaduna </option>
+                <option value="Kano">Kano </option>
+                <option value="Kebbi">Kebbi </option>
+                <option value="Katsina">Katsina </option>
+                <option value="kogi">Kogi </option>
+                <option value="Kwara">Kwara </option>
+                <option value="Lagos">Lagos </option>
+                <option value="Nasarawa">Nasarawa </option>
+                <option value="Yobe">Yobe </option>
+                <option value="Zamfara">Zamfara </option>
+            </select><br><br>
+            <input type="address" name=" " id="" placeholder="Enter address" required>
+        </div>
+        <div class="radio">
+            <label for="Gender" id="radio">Male</label>
+            <input type="radio" name="male" id="radio" style="margin-top: 25.5rem; width: 13px;"required>
+            <label for="Gender" id="radio">Female</label>
+            <input type="radio" name="male" id="radio"  style="margin-top: 25.5rem; width: 13px; margin-top: -1rem;" required><br><br>
+        </div>
+        <button type="submit">Continue</button>
+    </form>
+</body>
+</html>
